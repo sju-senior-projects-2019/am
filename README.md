@@ -8,13 +8,13 @@
 - Potential Google Maps API integration (Time Dependent)
 
 ### Current Problems:
-- Pi ran out of storage
+- ~~Pi ran out of storage~~
 - Calculating energy needed to power device while remaining light
 
 
 ### Week One: 2/17 - 2/23
 1. ~~Install TF & OpenCV~~
-2. Complete Make: Drones
+2. ~~Complete Make: Drones~~
 3. Calculate energy usage for project
 	- Learn how to read & create schematics
 4. Order parts
