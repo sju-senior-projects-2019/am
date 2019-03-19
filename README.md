@@ -64,8 +64,20 @@ Learn about PID, motors, yaw, pitch, filters (Kalman vs. Madgwick) & ArduPilot.
 - Less Computational Power
 - Harder Project
 
-###### 
+ 
+## Week 5 & 6: 3/10 - 3/23
+###### What I've been working on...
+Redefining the project:
+- Smart drone for the time being
+- May try to implement own flight controller
 
+Assembled most of the parts, rest are on the way
+
+Setting up TensorFlow and OpenCV for real time detection on boot
+- consists of Bash and Python script
+
+Potential Obstacles:
+- Naze32 is hard to program or control; may need to use another flight controller that is more programmable
 
 
 
