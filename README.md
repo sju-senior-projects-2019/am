@@ -1,3 +1,41 @@
+I created a first responder drone that is capable of real-time object 
+detection and recording based on the mode I decide to put the drone in. 
+The drone was originally supposed to have GPS implemented in it but the
+specific model I have purchased sent my Pi into a kernel panic. Below
+is an album of me building it and some late night flying. 
+
+https://photos.app.goo.gl/owaxT1FffHMgUdnVA
+
+In this project I used OpenCV to handle video and recording. 
+I used TensorFlow for real-time object detection with the help
+of Edje Electronics, Google, and dantitran's tutorials. 
+I used knowledge gained from SJU's IoT class and the books that went
+along with the course to handle the hardware. 
+To learn about drones I read Getting Started with Drones by Kilby, Drones:
+Make an Arduino Fly by McGriffy (Highly recommend), Building Drones for
+the Evil Genius, and the YouTube channel Painless 360. 
+
+Parts:
+- S500 frame
+- Raspberry Pi 3
+- APM 2.8
+- 3S 5200 mAh LiPo
+- Readytosky 2212 motors
+- DJI props
+- Flycolor BLHeli_s 30A ESC
+- Pi camera
+- Logitech camera
+- Two 5V UBECs
+- FlySky i6X transmitter
+- FlySky iA6B receiver
+ 
+Below is an outline of where I thought I wanted to take the project below
+earlier this semester. 
+
+
+
+
+
 # Arduino-Based Drone
 ## To Do (No Order):
 
