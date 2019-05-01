@@ -1,3 +1,5 @@
+# Test program is a slightly modified version of Odunlade Emmanuel's program
+# of CircuitDigest where you can find a guide to implementing GPS on the Pi
 import time
 import serial
 import pynmea2
