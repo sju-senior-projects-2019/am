@@ -1,6 +1,7 @@
-# Created using Edje Electronics, Google's Guide, and datitran
+# Created using mostly Edje Electronics code along with Google's TF Guide, and datitran's code
+using 
+## https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi/blob/master/Object_detection_picamera.py
 ## https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb
-
 ## https://github.com/datitran/object_detector_app/blob/master/object_detection_app.py
 
 # Import packages
@@ -14,20 +15,14 @@ import argparse
 import sys
 
 # Set up camera constants
-IM_WIDTH = 1280
-IM_HEIGHT = 720
-#IM_WIDTH = 640    Use smaller resolution for
-#IM_HEIGHT = 480   slightly faster framerate
+# IM_WIDTH = 1280
+# IM_HEIGHT = 720
+IM_WIDTH = 640    Use smaller resolution for
+IM_HEIGHT = 480   slightly faster framerate
 
 # Select camera type (if user enters --usbcam when calling this script,
 # a USB webcam will be used)
 camera_type = 'picamera'
-parser = argparse.ArgumentParser()
-parser.add_argument('--usbcam', help='Use a USB webcam instead of picamera',
-                    action='store_true')
-args = parser.parse_args()
-if args.usbcam:
-    camera_type = 'usb'
 
 # This is needed since the working directory is the object_detection folder.
 sys.path.append('..')
@@ -68,9 +63,8 @@ with detection_graph.as_default():
     with tf.gfile.GFile(PATH_TO_CKPT, 'rb') as fid:
         serialized_graph = fid.read()
         od_graph_def.ParseFromString(serialized_graph)
-        tf.import_graph_def(od_graph_def, name='')
-
-    sess = tf.Session(graph=detection_graph)
+tf.import_graph_def(od_graph_def, name='')
+sess = tf.Session(graph=detection_graph)
 
 
 # Define input and output tensors (i.e. data) for the object detection classifier
